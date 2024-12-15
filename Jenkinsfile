@@ -30,7 +30,7 @@ pipeline{
                             unstash name: 'Files'
                             set FLASK_APP=app\\api.py
                             start flask run 
-                            start java -jar wiremockwiremock-standalone-3.10.0.jar
+                            start java -jar wiremock-standalone-3.10.0.jar
                             set PYTHONPATH=%WORKSPACE%
                             pytest --junitxml=result-rest.xml test\\rest
                         '''
