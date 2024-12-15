@@ -17,6 +17,7 @@ pipeline{
                         bat '''
                             set PYTHONPATH=%WORKSPACE%
                             pytest --junitxml=result-unit.xml test\\unit
+                            stash includes: '*', name: 'Files'
                         '''
                     }
                 }
@@ -26,6 +27,7 @@ pipeline{
                     }
                     steps{
                         bat '''
+                            unstash name: 'Files'
                             set FLASK_APP=app\\api.py
                             start flask run 
                             start java -jar wiremockwiremock-standalone-3.10.0.jar
