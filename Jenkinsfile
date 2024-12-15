@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('GetCode'){
             steps{
-                git branch:'develop', url:'https://github.com/david-gallego-campos/UNIR_devops_David.git'
+                git branch:'feature_fix_racecond', url:'https://github.com/david-gallego-campos/UNIR_devops_David.git'
             }
         }
         stage('Tests')
