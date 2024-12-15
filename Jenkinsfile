@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('GetCode'){
             steps{
-                git 'https://github.com/david-gallego-campos/UNIR_devops_David.git'
+                git branch:'develop', url:'https://github.com/david-gallego-campos/UNIR_devops_David.git'
             }
         }
         stage('Tests')
