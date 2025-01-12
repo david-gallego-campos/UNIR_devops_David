@@ -6,6 +6,7 @@ class InvalidPermissions(Exception):
 
 
 class Calculator:
+
     def add(self, x, y):
         self.check_types(x, y)
         return x + y
@@ -28,6 +29,9 @@ class Calculator:
     def power(self, x, y):
         self.check_types(x, y)
         return x ** y
+
+    def sqrt(self, x, y):
+        print("Doing the sqrt")
 
     def check_types(self, x, y):
         if not isinstance(x, (int, float)) or                                                not isinstance(y, (int, float)):
