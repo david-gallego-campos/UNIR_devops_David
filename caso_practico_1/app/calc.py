@@ -37,6 +37,10 @@ class Calculator:
     def abs(self, x, y):
         print("Doing the abs")
         return 0
+    
+    def ceil(self, x, y):
+        print("Doing the ceil")
+        return 0
 
     def check_types(self, x, y):
         if not isinstance(x, (int, float)) or                                                not isinstance(y, (int, float)):
