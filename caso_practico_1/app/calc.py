@@ -32,6 +32,11 @@ class Calculator:
 
     def sqrt(self, x, y):
         print("Doing the sqrt")
+        return 0
+
+    def abs(self, x, y):
+        print("Doing the abs")
+        return 0
 
     def check_types(self, x, y):
         if not isinstance(x, (int, float)) or                                                not isinstance(y, (int, float)):
