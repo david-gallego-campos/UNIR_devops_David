@@ -38,8 +38,8 @@ class Calculator:
         print("Doing the abs")
         return 0
     
-    def ceil(self, x, y):
-        print("Doing the ceil")
+    def float(self, x, y):
+        print("Doing the float")
         return 0
 
     def check_types(self, x, y):
