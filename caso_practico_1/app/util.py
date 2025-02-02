@@ -1,4 +1,6 @@
 # pylint: disable=no-else-return
+import app
+
 def convert_to_number(operand):
     try:
         if "." in operand:
