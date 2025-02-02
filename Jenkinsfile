@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Get Code'){
             steps{
-                git url:'https://github.com/david-gallego-campos/UNIR_devops_David.git'
+                git branch:'feature_fix_coverage', url:'https://github.com/david-gallego-campos/UNIR_devops_David.git'
                 bat 'dir'
                 echo WORKSPACE
             }
