@@ -1,7 +1,7 @@
 import unittest
 import pytest
 
-from app.util import util
+from caso_practico_1.app.util import util
 
 
 @pytest.mark.unit
