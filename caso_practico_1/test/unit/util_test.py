@@ -1,7 +1,7 @@
 import unittest
 import pytest
 
-from app import util
+from app.util import util
 
 
 @pytest.mark.unit
